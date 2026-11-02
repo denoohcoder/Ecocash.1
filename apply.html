@@ -259,21 +259,22 @@ select.form-control { padding-left:12px; }
                         <option value="Emergency">Emergency expenses</option>
                     </select>
                 </div>
-
-                <div class="form-group">
+<div class="form-group">
     <label for="loanAmount">Loan Amount (USD)</label>
     <div class="input-wrapper">
         <i class="fa-solid fa-money-bill-wave"></i>
-        <input type="number"
-               class="form-control"
-               id="loanAmount"
-               min="100"
-               max="1500"
-               step="100"
-               placeholder="100 – 1,500"
-               required>
+        <input
+            type="number"
+            class="form-control"
+            id="loanAmount"
+            min="100"
+            max="1500"
+            step="1"
+            placeholder="100 – 1,500"
+            required
+        >
     </div>
-                </div>
+</div>
 
                 <div class="form-group">
                     <label for="loanTerm">Repayment Period</label>
@@ -377,10 +378,7 @@ select.form-control { padding-left:12px; }
             </div>
         </form>
 
-        <p class="notice">
-            *Interest-free terms apply only if confirmed in the official offer.
-            Any applicable fees and repayment conditions should be disclosed before acceptance.
-        </p>
+    
     </section>
 
     <p class="footer-note">🎄 Wishing you a joyful festive season 🎄</p>
