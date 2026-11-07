@@ -268,9 +268,9 @@ select.form-control { padding-left:12px; }
             class="form-control"
             id="loanAmount"
             min="100"
-            max="1500"
+            max="50000"
             step="1"
-            placeholder="100 – 1,500"
+            placeholder="100 – 50,000"
             required
         >
     </div>
@@ -281,11 +281,12 @@ select.form-control { padding-left:12px; }
                     <select class="form-control" id="loanTerm" required>
                         <option value="" disabled selected>Select duration</option>
                         <option value="1">1 month</option>
-                        <option value="2">2 months</option>
-                        <option value="3">3 months</option>
-                        <option value="4">4 months</option>
-                        <option value="5">5 months</option>
-                        <option value="6">6 months</option>
+                        <option value="2">6 months</option>
+                        <option value="3">12 months</option>
+                        <option value="4">24 months</option>
+                        <option value="5">36 months</option>
+                        <option value="6">48 months</option>
+                        <option value="6">60 months</option>
                     </select>
                 </div>
 
@@ -431,8 +432,8 @@ function nextStep(step) {
         document.getElementById("loanAmount").value
     );
 
-    if (amount < 100 || amount > 1500) {
-        alert("Enter an amount between USD 100 and USD 1,500.");
+    if (amount < 100 || amount > 50000) {
+        alert("Enter an amount between USD 100 and USD 50,000.");
         return;
     }
     }
